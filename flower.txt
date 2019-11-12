@@ -1,0 +1,23 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+{
+	int i,n1,n2,n3,n4,n5,n6,n7,n8,n9;
+	
+	for(i=100000000;i<=9999999999;i++){
+		n1=i%10;
+		n2=(i/10)%10;
+		n3=(i/100)%10;
+		n4=(i/1000)%10;
+		n5=(i/10000)%10;
+		n6=(i/100000)%10;
+		n7=(i/1000000)%10;
+		n8=(i/10000000)%10;
+		n9=i/100000000;
+		if(pow(n1,9)+pow(n2,9)+pow(n3,9)+pow(n4,9)+pow(n5,9)+pow(n6,9)+pow(n7,9)+pow(n8,9)+pow(n9,9)==i)
+		printf("%d\n",i);	
+	}
+	return 0;
+	
+} 
